@@ -1,4 +1,4 @@
-<?php
+<?
     $nome = "sammuel";
     $idade = 16;
     echo "Meu nome é ".$nome.", e tenho ".$idade." anos.";
@@ -36,5 +36,27 @@
         echo "B é maior que A";
     }
     echo "<br>saiu do IF";
-
+    echo "<center><h2>números randomicos</h2></center>";
+    $num = rand(1, 10);
+    $meunum = 6;
+    if ($num == $meunum); {
+         echo "o valor da sua variavel " .$meunum. ". o numero sorteado foi";
+    }
+    echo "<hr>";
+    echo "<h2>Tabuada</h2>";
+    $num = 5;
+    for ($i=1; $i <= 10 ; $i++) { 
+        echo $num." X ".$i." = ".$num*$i."<br>";
+    }
+    $a = 0;
+    while ($a < 100) {
+        echo $a. "<br>";
+        $a+=10;
+    }
+    echo "<hr>";
+    echo "<h2>foreach</h2>";
+    $cores = array("azul","marrom","bege","amarelo","branco");
+    foreach ($cores as $cor){
+        echo $cor. "<br>";
+    }
 ?>
